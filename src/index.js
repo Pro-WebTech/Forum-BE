@@ -8,6 +8,7 @@ const cors = require('cors');
 const RateLimit = require('express-rate-limit');
 const createError = require('http-errors');
 
+console.log("Env:", process.env.MONGODB)
 const DB = require('./modules/DB');
 
 const app = express()
